@@ -1,7 +1,7 @@
 {
-  "id": "5e-spellblock-importer",
-  "title": "5e Spellblock Importer",
-  "description": "Import spells statblocks for D&D 5e",
+  "id": "5e-items-importer",
+  "title": "5e Items Importer",
+  "description": "Import spells, items, monsters and other content for D&D 5e from PDFs and text sources",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
@@ -12,9 +12,8 @@
   },
   "authors": [
     {
-      "name": "Luca Gioppo",
-      "url": "https://github.com/gioppoluca",
-      "discord": "gioppoluca",
+      "name": "ArcadiaFrame",
+      "url": "https://github.com/ArcadiaFrame",
       "flags": {}
     }
   ],
@@ -52,7 +51,7 @@
   "media": [
     {
       "type": "icon",
-      "url": "https://raw.githubusercontent.com/gioppoluca/5e-spellblock-importer/master/img/spellblock-512.jpg",
+      "url": "https://raw.githubusercontent.com/ArcadiaFrame/5e-items-importer/master/img/spellblock-512.jpg",
       "loop": false,
       "flags": {}
     }

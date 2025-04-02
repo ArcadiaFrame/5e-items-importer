@@ -1,13 +1,64 @@
 <div>
-    <textarea id="spbi-input" wrap="hard" cols="1"
-        placeholder="{{ localize '5e-spellblock-importer.placeholder' }}"></textarea>
+    <div id="spbi-tabs" class="tabs">
+        <nav class="tabs">
+            <a class="item active" data-tab="text" title="Switch to text input mode"><i class="fas fa-font"></i> Text Input</a>
+            <a class="item" data-tab="pdf" title="Switch to PDF upload mode"><i class="fas fa-file-pdf"></i> PDF Upload</a>
+        </nav>
+        
+        <div class="tab" data-tab="text">
+            <label for="spbi-input" class="visually-hidden">Enter spell or item text</label>
+            <textarea id="spbi-input" wrap="hard" cols="1"
+                placeholder="{{ localize '5e-spellblock-importer.placeholder' }}" title="Enter spell or item text"></textarea>
+        </div>
+        
+        <div class="tab" data-tab="pdf">
+            <div id="spbi-pdf-upload">
+                <div class="spbi-upload-area">
+                    <i class="fas fa-file-upload fa-3x"></i>
+                    <p>Drag & drop a PDF file here or click to browse</p>
+                    <label for="spbi-pdf-input" class="visually-hidden">Upload PDF file</label>
+                    <input type="file" id="spbi-pdf-input" accept=".pdf" class="hidden" title="Upload PDF file">
+                </div>
+                <div id="spbi-pdf-info" class="hidden">
+                    <p><span id="spbi-pdf-name"></span> <button id="spbi-pdf-clear" type="button" title="Clear PDF file"><i class="fas fa-times"></i><span class="visually-hidden">Clear PDF file</span></button></p>
+                    <div id="spbi-pdf-progress" class="hidden">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill"></div>
+                        </div>
+                        <p id="spbi-pdf-status">Processing...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="spbi-items-container" class="hidden">
+            <h3>Detected Items</h3>
+            <div class="spbi-controls">
+                <button id="spbi-select-all" type="button" title="Select all items">Select All</button>
+                <button id="spbi-deselect-all" type="button" title="Deselect all items">Deselect All</button>
+                <select id="spbi-filter-type" title="Filter items by type">
+                    <option value="all">All Types</option>
+                    <option value="spell">Spells</option>
+                    <option value="item">Items</option>
+                    <option value="monster">Monsters</option>
+                    <option value="classFeature">Class Features</option>
+                    <option value="feat">Feats</option>
+                </select>
+            </div>
+            <div id="spbi-items-list" class="spbi-items-list">
+                <!-- Items will be populated here -->
+            </div>
+        </div>
+    </div>
+    
     <section id="spbi-bottom">
         <span id="spbi-import-text">{{ localize '5e-spellblock-importer.importText' }}</span>
-        <select id="spbi-import-select"></select>
-        <select id="spbi-import-type">
+        <select id="spbi-import-select" title="Select folder for import"></select>
+        <select id="spbi-import-type" title="Select item type for import">
             <option value="spell" selected>{{ localize '5e-spellblock-importer.type.spell' }}</option>
             <option value="item">{{ localize '5e-spellblock-importer.type.item' }}</option>
-          </select>
-        <button id="spbi-import-button" type="button">{{ localize '5e-spellblock-importer.importButton' }}</button>
+            <option value="monster">{{ localize '5e-spellblock-importer.type.monster' }}</option>
+        </select>
+        <button id="spbi-import-button" type="button" title="Import selected items">{{ localize '5e-spellblock-importer.importButton' }}</button>
     </section>
 </div>

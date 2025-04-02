@@ -1,45 +1,66 @@
 ![](https://img.shields.io/badge/Foundry-v10-informational)
-<!--- Downloads @ Latest Badge -->
-<!--- replace <user>/<repo> with your username/repository -->
-![Latest Release Download Count](https://img.shields.io/github/downloads/gioppoluca/5e-spellblock-importer/latest/module.zip)
+![Latest Release Download Count](https://img.shields.io/github/downloads/ArcadiaFrame/5e-items-importer/latest/module.zip)
+![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F5e-items-importer&colorB=4aa94a)
 
-<!--- Forge Bazaar Install % Badge -->
-<!--- replace <your-module-name> with the `name` in your manifest -->
-![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F5e-spellblock-importer&colorB=4aa94a)
+# 5e Items Importer
 
-# 5e Spellblock Importer
+A comprehensive content import solution for D&D 5e in Foundry VTT. This module allows you to easily import spells, items, monsters, and other content from various sources including PDFs and text blocks.
 
-Do you have a number of homebrewed spells or items around that you want to use in your foundry 5e game?  Are you tired of manually entering all of them?
+## Features
 
-5e Spellblock Importer got you covered! You can now copy and paste the standard spell or item format in the import dialog and "Voilà!" the new spell or item is ready to be used or further customized in your world.
+### PDF Import
+- Import content directly from PDF files
+- Supports both text-based and image-based PDFs (using OCR)
+- Automatically detects and categorizes different types of content
+- Handles multiple content types in a single import
 
-You will find this button in the bottom of the **Items** tab:
+### Text Block Import
+- Copy and paste content blocks for quick import
+- Supports various content types:
+  - Spells
+  - Items and Equipment
+  - Monsters and NPCs
+  - Class Features
+  - Feats
+- Smart content detection and automatic categorization
+- Maintains proper formatting and game mechanics
 
-![Import Button](doc/item-button.png)
+### Smart Content Processing
+- Automatic content type detection
+- Intelligent parsing of game mechanics
+- Proper mapping to Foundry VTT data structures
+- Validation of imported content
 
-It will open the import dialog
+## Usage
 
-![Import Dialog](doc/import-dialog.png)
+1. Access the importer through the Items Directory
+2. Click the Import button at the bottom of the window
+3. Choose your import method:
+   - Paste text content directly
+   - Select a PDF file to import
+4. Review and confirm the detected content
+5. Import into your world!
 
-You can paste and edit, if necessary, the spellblock or the itemblock.
+### Text Import Tips
+- Content name should be the first line of the block
+- Formatting is preserved during import
+- Supports standard 5e formatting conventions
 
-Remeber to choose in the **small dialog** if you are importing a spell or an item.
+### PDF Import Tips
+- Both text-based and scanned PDFs are supported
+- Multiple content blocks can be imported at once
+- OCR processing is available for image-based PDFs
 
-The important thing is that the spell or item name **has** to be the first line of the block.
-Here is an example of a spellblock:
-![Import Dialog with spell](doc/import-dialog-spell.png)
-When you are satisfied you can press the **Import** button and you will see the spell or item imported in your world.
-![Imported Spell](doc/imported-spell.png)
+## Installation
 
-If the spell has a list of classes for which it is aviable the module will create a journal called "imported-spells" where it will create a set of pages for all classes with the inported spells added to the proper page.
-
-For items Weapons that have a subtype that matches an existing object in the SRD compendium it will clone the attributes from there to speed edit time, you will be able to alter the datails after the import without having to rewrite all the data of the weapon.
-
-## Acknoledments
-Thanks to [ArcaneRoboBrain](https://foundryvtt.com/community/arcanerobobrain) for the creation of [5e Statblock importer](https://foundryvtt.com/packages/5e-statblock-importer) from which module i've taken code and inspiration.
+1. Inside Foundry VTT, select the Game Modules tab in the Configuration and Setup menu
+2. Click the Install Module button and enter the following URL: https://github.com/ArcadiaFrame/5e-items-importer/releases/latest/download/module.json
+3. Click Install and wait for installation to complete
 
 ## Support
-Please open issues on this repo for any problems that you can have using this module.
 
-If you want to support this work 
-<a href="https://www.buymeacoffee.com/lucagioppo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+If you encounter any issues or have suggestions for improvements, please open an issue on our [GitHub repository](https://github.com/ArcadiaFrame/5e-items-importer).
+
+## License
+
+This module is licensed under the MIT License. See the LICENSE file for details.

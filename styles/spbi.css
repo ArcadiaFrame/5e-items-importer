@@ -22,7 +22,188 @@
 }
 
 #spbi-input {
-    height: 500px;
+    height: 400px;
     margin-bottom: 5px;
     resize: none;
+    width: 100%;
+}
+
+/* Tabs styling */
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs nav {
+    display: flex;
+    border-bottom: 1px solid #782e22;
+}
+
+.tabs nav .item {
+    padding: 5px 10px;
+    border: 1px solid #782e22;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.tabs nav .item.active {
+    background: rgba(120, 46, 34, 0.1);
+    font-weight: bold;
+}
+
+.tab {
+    display: none;
+    padding: 10px 0;
+}
+
+.tab[data-tab="text"].active,
+.tab[data-tab="pdf"].active {
+    display: block;
+}
+
+/* PDF upload area */
+#spbi-pdf-upload {
+    width: 100%;
+}
+
+.spbi-upload-area {
+    border: 2px dashed #782e22;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.spbi-upload-area:hover {
+    background: rgba(120, 46, 34, 0.1);
+}
+
+.spbi-upload-area i {
+    margin-bottom: 10px;
+    color: #782e22;
+}
+
+#spbi-pdf-info {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#spbi-pdf-clear {
+    background: none;
+    border: none;
+}
+
+/* Hidden elements */
+.hidden {
+    display: none;
+}
+
+/* Progress bar initial state */
+.progress-bar-fill {
+    width: 0%;
+    color: #782e22;
+    cursor: pointer;
+    float: right;
+}
+
+.dragover {
+    background: rgba(120, 46, 34, 0.2) !important;
+}
+
+/* Accessibility - Visually hidden elements (for screen readers) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+
+/* Progress bar */
+.progress-bar {
+    height: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #782e22;
+    transition: width 0.3s ease;
+}
+
+#spbi-pdf-status {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Items list */
+#spbi-items-container {
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.spbi-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.spbi-items-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.spbi-item {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.spbi-item:last-child {
+    border-bottom: none;
+}
+
+.spbi-item-checkbox {
+    margin-right: 10px;
+}
+
+.spbi-item-name {
+    font-weight: bold;
+    flex: 1;
+}
+
+.spbi-item-type {
+    color: #666;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.spbi-item-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
 }
