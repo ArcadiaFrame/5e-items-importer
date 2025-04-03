@@ -8,7 +8,7 @@
         <div class="tab" data-tab="text">
             <label for="spbi-input" class="visually-hidden">Enter spell or item text</label>
             <textarea id="spbi-input" wrap="hard" cols="1"
-                placeholder="{{ localize '5e-spellblock-importer.placeholder' }}" title="Enter spell or item text"></textarea>
+                placeholder="{{ localize '5e-items-importer.placeholder' }}" title="Enter spell or item text"></textarea>
         </div>
         
         <div class="tab" data-tab="pdf">
@@ -52,13 +52,13 @@
     </div>
     
     <section id="spbi-bottom">
-        <span id="spbi-import-text">{{ localize '5e-spellblock-importer.importText' }}</span>
+        <span id="spbi-import-text">{{ localize '5e-items-importer.importText' }}</span>
         <select id="spbi-import-select" title="Select folder for import"></select>
         <select id="spbi-import-type" title="Select item type for import">
-            <option value="spell" selected>{{ localize '5e-spellblock-importer.type.spell' }}</option>
-            <option value="item">{{ localize '5e-spellblock-importer.type.item' }}</option>
-            <option value="monster">{{ localize '5e-spellblock-importer.type.monster' }}</option>
+            <option value="spell" selected>{{ localize '5e-items-importer.type.spell' }}</option>
+            <option value="item">{{ localize '5e-items-importer.type.item' }}</option>
+            <option value="monster">{{ localize '5e-items-importer.type.monster' }}</option>
         </select>
-        <button id="spbi-import-button" type="button" title="Import selected items">{{ localize '5e-spellblock-importer.importButton' }}</button>
+        <button id="spbi-import-button" type="button" title="Import selected items">{{ localize '5e-items-importer.importButton' }}</button>
     </section>
 </div>
