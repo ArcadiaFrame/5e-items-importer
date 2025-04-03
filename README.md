@@ -1,12 +1,9 @@
-![](https://img.shields.io/badge/Foundry-v12.331-informational)
-![Latest Release Download Count](https://img.shields.io/github/downloads/ArcadiaFrame/5e-items-importer/latest/module.zip)
-![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F5e-items-importer&colorB=4aa94a)
+
 
 # 5e Items Importer
 
-A comprehensive content import solution for D&D 5e in Foundry VTT. This module allows you to easily import spells, items, monsters, and other content from various sources including PDFs and text blocks.
+Import spells, items, monsters and other content for D&D 5e from PDFs and text sources.
 
-![Import Dialog](doc/import-dialog.png)
 
 ## Features
 
@@ -53,8 +50,6 @@ A comprehensive content import solution for D&D 5e in Foundry VTT. This module a
 - Multiple content blocks can be imported at once
 - OCR processing is available for image-based PDFs
 
-![Import Dialog Spell](doc/import-dialog-spell.png)
-![Imported Spell](doc/imported-spell.png)
 
 ## Installation
 
@@ -66,7 +61,6 @@ A comprehensive content import solution for D&D 5e in Foundry VTT. This module a
 
 - Requires Foundry VTT v10 or newer (verified with v12.331)
 - Compatible with D&D 5e system v4.3.6 (maximum compatibility up to v4.999)
-- For best results, use with the latest version of the D&D 5e system
 
 ## Support
 
