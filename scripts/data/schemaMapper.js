@@ -29,7 +29,7 @@ export class schemaMapper {
         const spellData = {
             name: extractedData.name,
             type: "spell",
-            img: "modules/5e-content-importer/img/spell.png",
+            img: "modules/5e-items-importer/img/spell.png",
             system: {
                 description: { value: extractedData.description || "" },
                 source: extractedData.source || "",

@@ -34,7 +34,7 @@ export class spbiWindow extends Application {
     static get defaultOptions() {
         const options = super.defaultOptions;
         options.id = "spbi-window";
-        options.template = "modules/5e-spellblock-importer/templates/spbiWindow.html";
+        options.template = "modules/5e-items-importer/templates/spbiWindow.html";
         options.width = 800;
         options.height = 700;
         options.resizable = true;

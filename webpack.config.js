@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: 'modules/5e-content-importer/dist/'
+    publicPath: 'modules/5e-items-importer/dist/'
   },
   module: {
     rules: [

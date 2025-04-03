@@ -63,7 +63,7 @@ export class pdfHandler {
         try {
             // Load the PDF document using pdf.js
             const pdfjsLib = await import('pdfjs-dist');
-            pdfjsLib.GlobalWorkerOptions.workerSrc = 'modules/5e-content-importer/dist/pdf.worker.bundle.js';
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'modules/5e-items-importer/dist/pdf.worker.bundle.js';
             
             const loadingTask = pdfjsLib.getDocument(arrayBuffer);
             const pdf = await loadingTask.promise;

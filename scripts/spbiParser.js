@@ -238,7 +238,7 @@ export class spbiParser {
             spellObj = {
                 name: spbiUtils.capitalizeAll(spellName),
                 type: "spell",
-                img: "modules/5e-spellblock-importer/img/spell.png",
+                img: "modules/5e-items-importer/img/spell.png",
                 system: {
                     description: {
                         value: ""
@@ -254,7 +254,7 @@ export class spbiParser {
             spellObj = {
                 name: spbiUtils.capitalizeAll(spellName),
                 type: "spell",
-                img: "modules/5e-spellblock-importer/img/spell.png",
+                img: "modules/5e-items-importer/img/spell.png",
                 system: {
                     components: {
                         concentration: false,
