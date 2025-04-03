@@ -1,5 +1,5 @@
 {
-  "name": "5e-content-importer",
+  "name": "5e-items-importer",
   "version": "1.0.0",
   "description": "A comprehensive content importer for D&D 5e PDFs in FoundryVTT",
   "main": "scripts/module.js",
