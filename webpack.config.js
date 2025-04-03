@@ -8,8 +8,8 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: 'modules/5e-items-importer/dist/'
+    path: path.resolve(__dirname),
+    publicPath: 'modules/5e-items-importer/'
   },
   module: {
     rules: [
